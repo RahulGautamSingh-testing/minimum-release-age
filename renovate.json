@@ -11,6 +11,10 @@
       {
        "matchUpdateTypes": ["patch"],
        "stabilityDays": 2
+     },
+     {
+       "matchUpdateTypes": ["minor"],
+       "stabilityDays": 0
      }
    ],
     "hostRules": [
