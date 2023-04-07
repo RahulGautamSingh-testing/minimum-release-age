@@ -1,0 +1,23 @@
+{
+ "packageRules": [
+    {
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days"
+    },
+     {
+      "matchDatasources": ["docker"],
+      "stabilityDays": 1
+    },
+     {
+      "matchUpdateTypes": ["patch"],
+      "stabilityDays": 2
+    },
+  ],
+   "hostRules": [
+    {
+      "matchHost": "docker.io",
+      "stabilityDays": 3
+    }
+  ],
+  "stabilityDays": 3
+}
