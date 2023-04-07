@@ -1,29 +1,36 @@
 {
   "packageRules": [
-     {
-       "matchDatasources": ["npm"],
-       "minimumReleaseAge": "3 days"
-     },
-      {
-       "matchDatasources": ["docker"],
-       "stabilityDays": 1
-     },
-      {
-       "matchUpdateTypes": ["patch"],
-       "stabilityDays": 2
-     },
-     {
-       "matchUpdateTypes": ["minor"],
-       "stabilityDays": 0
-     }
-   ],
-    "hostRules": [
-     {
-       "matchHost": "docker.io",
-       "stabilityDays": 3
-     }
-   ],
-   "stabilityDays": 3,
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "minimumReleaseAge": "1 day"
+    },
+    {
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "minimumReleaseAge": "2 days"
+    },
+    {
+      "matchUpdateTypes": [
+        "minor"
+      ],
+      "minimumReleaseAge": null
+    }
+  ],
+  "hostRules": [
+    {
+      "matchHost": "docker.io",
+      "minimumReleaseAge": "3 days"
+    }
+  ],
+  "minimumReleaseAge": "3 days",
   "configMigration": true
- }
- 
+}
